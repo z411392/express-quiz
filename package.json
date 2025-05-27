@@ -5,6 +5,7 @@
     "consola": "^3.4.2",
     "cors": "^2.8.5",
     "express": "^5.1.0",
+    "heap-js": "^2.6.0",
     "yargs": "^17.7.2"
   },
   "devDependencies": {

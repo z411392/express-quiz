@@ -1,4 +1,4 @@
-.PHONY: format compile dev test
+.PHONY: format compile dev test merge
 
 format:
 	@npx prettier lib --write
@@ -11,3 +11,6 @@ dev:
 
 test:
 	@npx jest --forceExit --detectOpenHandles --passWithNoTests
+
+merge:
+	@node src/main.js merge --inputs examples/inputs/users_to_be_merged_1.json examples/inputs/users_to_be_merged_2.json examples/inputs/users_to_be_merged_3.json --output examples/outputs/users_merged.json

@@ -1,9 +1,9 @@
 import { default as express, Router } from "express"
 import cors from "cors"
 import { createServer } from "node:http"
-import { onCreatingUser } from "@/modules/user-managing/presentation/controllers/on-creating-user"
-import { onListingUsers } from "@/modules/user-managing/presentation/controllers/on-listing-users"
-import { onDeleteUser } from "@/modules/user-managing/presentation/controllers/on-deleting-user"
+import { onCreatingUser } from "@/modules/user-managing/presentation/http/controllers/on-creating-user"
+import { onListingUsers } from "@/modules/user-managing/presentation/http/controllers/on-listing-users"
+import { onDeleteUser } from "@/modules/user-managing/presentation/http/controllers/on-deleting-user"
 
 const router = Router()
 
